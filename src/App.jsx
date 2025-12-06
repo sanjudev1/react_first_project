@@ -8,8 +8,9 @@ function App() {
 
   return (
     <>
-      <div style={{color:"blue"}}>
+      <div style={{color:"red"}}>
        my first application
+       react is used to build UI 
       </div>
     </>
   )
