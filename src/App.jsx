@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div style={{color:"blue"}}>
        my first application
       </div>
     </>
