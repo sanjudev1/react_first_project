@@ -52,7 +52,9 @@ console.log(asserts)
     <div id="card_container">
     {data.map(e=>
      <div key={e.id} id={modulestyle.container}>
-     <BgColorExample props={e}/>
+      <img src={e.image}/>
+      <h1>{e.title}</h1>
+      <p>{e.description}</p>
      </div>
     )}
     </div>
