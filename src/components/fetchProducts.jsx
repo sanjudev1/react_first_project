@@ -1,4 +1,7 @@
+import { CustomSpinner } from "./customspinner"
 let data=""
+
+
 await fetch("https://fakestoreapi.com/products")
 .then((data)=>data.json())
 .then((jsondata)=>{
@@ -6,8 +9,13 @@ await fetch("https://fakestoreapi.com/products")
 )
 console.log(data)
 
+import { DNA } from "react-loader-spinner"
 import Customcard from "./customCard"
 import "./customstyles.css"
+
+
+
+
 function DisplayProducts(){
     return(
         <div className="cardcontainer">
