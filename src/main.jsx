@@ -4,16 +4,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import CustomNavbar from './components/Navbar';
 import { CustomSpinner } from './components/customspinner';
 import CustomCarousel from './components/Coursels';
-import Counter from './components/CounterApp';
+
+import Parent from './components/ParentComponent';
+import CounterApp, { Toggle } from './components/functionalbasedcomponents/CounterApp';
+
 
 
 
 
 createRoot(document.getElementById('root')).render(
     <> 
-
-    <CustomNavbar/>
+ <Toggle/>
+{/* <Parent/> */}
+    {/* <CustomNavbar/>
    <CustomCarousel/>
-   <Counter/>
+   <Counter/> */}
     </>
 )
