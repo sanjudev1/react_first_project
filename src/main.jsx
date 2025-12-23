@@ -1,10 +1,28 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import CustomNavbar from './components/Navbar';
+import { CustomSpinner } from './components/customspinner';
+import CustomCarousel from './components/Coursels';
+
+import Parent from './components/ParentComponent';
+import CounterApp, { Toggle } from './components/functionalbasedcomponents/CounterApp';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import RegisterForm from './components/functionalbasedcomponents/ControlledComp';
+import StopWatch from './components/StopWatch';
+import TimerApp from './components/TimerApp';
+import DisplayProducts from './components/fetchProducts';
+import FetchProducts from './components/functionalbasedcomponents/fetchProducts';
+
+
+
+
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
+    <> 
+    
+
+   <CustomNavbar/>
+   <CustomCarousel/>
+  <FetchProducts/>
+    </>
 )
