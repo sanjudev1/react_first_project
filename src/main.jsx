@@ -12,6 +12,8 @@ import StopWatch from './components/StopWatch';
 import TimerApp from './components/TimerApp';
 import DisplayProducts from './components/fetchProducts';
 import FetchProducts from './components/functionalbasedcomponents/fetchProducts';
+import Form, { ControlledComponent } from './components/functionalbasedcomponents/Form';
+import UncontrolledComponent from './components/functionalbasedcomponents/Form';
 
 
 
@@ -23,6 +25,8 @@ createRoot(document.getElementById('root')).render(
 
    <CustomNavbar/>
    <CustomCarousel/>
+   <ControlledComponent/>
+   <UncontrolledComponent/>
   <FetchProducts/>
     </>
 )
