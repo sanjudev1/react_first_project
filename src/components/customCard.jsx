@@ -3,6 +3,7 @@
 
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router';
 
 function Customcard(props) {
   return (
@@ -19,7 +20,7 @@ function Customcard(props) {
         <Card.Text>
           {props.product.description.slice(0,50)}
         </Card.Text>
-        <Button variant="success">{props.product.category}</Button>
+        <Link to={`/product/${props.product.id}`}><Button variant="success">{props.product.category}</Button></Link>
       </Card.Body>
     </Card>
   );
