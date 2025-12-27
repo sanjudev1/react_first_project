@@ -19,8 +19,9 @@ import Home from './Home';
 import About from './components/functionalbasedcomponents/About';
 import Service from './components/functionalbasedcomponents/Service';
 import Product from './components/functionalbasedcomponents/ProductDetails';
-
-
+import 'primereact/resources/themes/lara-light-indigo/theme.css'; // theme
+import 'primereact/resources/primereact.min.css';                // core css
+// import 'primeicons/primeicons.css';                              // ICONS (IMPORTANT)
 
 
 createRoot(document.getElementById('root')).render(
